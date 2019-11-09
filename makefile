@@ -10,6 +10,7 @@ run:
 clean:
 	rm *.o
 	rm randfile
+	rm random.txt
 
 memcheck:
 	valgrind --leak-check=yes ./randfile
