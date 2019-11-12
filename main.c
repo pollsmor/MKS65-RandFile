@@ -30,7 +30,7 @@ int main() {
 
   printf("\n");
   printf("Writing numbers to file... \n");
-  int fd = open("random.txt", O_CREAT | O_WRONLY, 0640);
+  int fd = open("random.txt", O_CREAT | O_WRONLY | O_TRUNC, 0640);
   if (fd < 0) {
     printf("Error %d: %s \n", errno, strerror(errno));
     return 0;
